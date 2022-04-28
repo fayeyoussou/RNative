@@ -4,6 +4,7 @@ import { StyleSheet, ImageBackground,SafeAreaView} from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import StartGameScreen from "./screens/StartGameScreen";
 import GameScreen from "./screens/GameScreen";
+import Colors from './constants/colors';
 // import { SafeAreaView } from 'react-native-web';
 const App = () => {
   const [number,setNumber] = useState()
@@ -16,7 +17,7 @@ const App = () => {
   }
   return (
     <LinearGradient
-      colors={["#5e0329", "#ddb52f", "#eeb45f", "#11ff55"]}
+      colors={[Colors.primary700, Colors.accent500, Colors.accent600, Colors.secondaryAccent500]}
       style={styles.rootScreen}
     >
       <ImageBackground
